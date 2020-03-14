@@ -1,11 +1,17 @@
 import React from 'react'
 import {BrowserRouter, Route} from 'react-router-dom'
 
+import './App.css'
+import RootTopic from './components/RootTopic'
+import BottomBar from './components/BottomBar'
+import db from './configs/db'
+
 function App(){
 
   return(
     <div>
-      <h1>Hello World:)</h1>
+        <RootTopic />
+	<BottomBar />
     </div>
   )
 
