@@ -5,12 +5,19 @@ import db from './../configs/db'
 function BottomBar(){
 
   function handleClick(){
-    db.topics.add({title: '1st title..', body: '1st body', parent: 0})
+   /* db.topics.add({title: '1st title..', body: '1st body', parent: 0})
     var readDb = db.topics.toArray()
     readDb.then((rs)=>{
     document.getElementById('test').innerText = rs[1].title;
     console.log(rs)
-    })
+    })*/
+
+    /*db.delete().then(()=>{
+      console.log('DB Deleted Successfuly:)')
+        }).catch(err=>{
+	console.log(err)
+      })*/
+    //db.topics.toArray().then(rs=>console.log(rs))
   }
 
   return(

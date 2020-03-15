@@ -12,18 +12,41 @@ body{
        Topic
 *******************/
 .topic-container{
+  position: relative;
   padding: 10px 20px 10px 25px;
  /* margin: 10px 0px;*/
  /* background: white;*/
   /*box-shadow: 0px 1px 2px lightgray;*/
 }
+#childrens-display{
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  border: 7px lightgray solid;
+  border-color: gray transparent transparent transparent;
+}
 .topic-title{
-  position: relative;  
+  position: relative;
+  font-size: 10pt;  
+}
+.topic-title::before{
+  position: absolute;
+  top: 4px;
+  left: -15px;
+  content: '';
+  height: 9px;
+  width: 9px;
+  background: rgba(150, 150, 150, 0.5);
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px lightgray;
 }
 .topic-description{
-  margin-left: 10px;
+  margin-left: 0px;
   color: gray;
-  font-size: 8pt;
+  font-size: 7pt;
+}
+#topic-childs{
+  padding-left: 20px;
 }
 
 /********************
@@ -52,8 +75,17 @@ body{
   outline-color: transparent;
 }
 
-
-
+/*******************************
+            Paths
+*******************************/
+#paths{
+  padding: 10px;
+  margin-bottom: 20px;
+  background: rgba(180, 180, 180, 0.2);
+}
+.path-names{
+  color: gray;
+}
 
 
 
